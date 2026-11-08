@@ -1,6 +1,6 @@
 <div align="center">
 
-# Suvesh Kumar
+# Suvesh
 
 ### Full Stack Developer & Systems Builder
 
@@ -31,7 +31,7 @@ I build fast web apps, cloud services, and developer tools. I love creating smoo
     <td width="240" valign="top">
       <sub>🔭 CURRENT PROJECT</sub>
       <br/><br/>
-      <a href="https://github.com/Suvesh108/EDM"><img src="https://img.shields.io/badge/EDM-Rust_·_Fast-CE422B?style=for-the-badge&logo=github&logoColor=white&labelColor=18181b" alt="EDM" /></a>
+      <a href="https://github.com/bytebldr/EDM"><img src="https://img.shields.io/badge/EDM-Rust_·_Fast-CE422B?style=for-the-badge&logo=github&logoColor=white&labelColor=18181b" alt="EDM" /></a>
     </td>
     <td valign="middle">
       A lightweight download manager with low memory usage and fast multi-threaded parallel downloads.
@@ -82,7 +82,7 @@ I build fast web apps, cloud services, and developer tools. I love creating smoo
   <tr>
     <td width="50%" valign="top">
       <h4>
-        <a href="https://github.com/Suvesh108/jobscrap">
+        <a href="https://github.com/bytebldr/jobscrap">
           <img src="https://img.shields.io/badge/jobscrap-Python_·_Fast-f59e0b?style=for-the-badge&logo=github&logoColor=white&labelColor=18181b" alt="jobscrap" />
         </a>
       </h4>
@@ -93,7 +93,7 @@ I build fast web apps, cloud services, and developer tools. I love creating smoo
     </td>
     <td width="50%" valign="top">
       <h4>
-        <a href="https://github.com/Suvesh108/NetPulse">
+        <a href="https://github.com/bytebldr/NetPulse">
           <img src="https://img.shields.io/badge/NetPulse-TypeScript_·_Web-0ea5e9?style=for-the-badge&logo=github&logoColor=white&labelColor=18181b" alt="NetPulse" />
         </a>
       </h4>
@@ -106,7 +106,7 @@ I build fast web apps, cloud services, and developer tools. I love creating smoo
   <tr>
     <td width="50%" valign="top">
       <h4>
-        <a href="https://github.com/Suvesh108/UnitWise">
+        <a href="https://github.com/bytebldr/UnitWise">
           <img src="https://img.shields.io/badge/UnitWise-Dart_·_IoT-00ADD8?style=for-the-badge&logo=github&logoColor=white&labelColor=18181b" alt="UnitWise" />
         </a>
       </h4>
@@ -117,7 +117,7 @@ I build fast web apps, cloud services, and developer tools. I love creating smoo
     </td>
     <td width="50%" valign="top">
       <h4>
-        <a href="https://github.com/Suvesh108/Universal-Shared">
+        <a href="https://github.com/bytebldr/Universal-Shared">
           <img src="https://img.shields.io/badge/Universal--Shared-JavaScript_·_Sync-eab308?style=for-the-badge&logo=github&logoColor=white&labelColor=18181b" alt="Universal-Shared" />
         </a>
       </h4>
@@ -130,7 +130,7 @@ I build fast web apps, cloud services, and developer tools. I love creating smoo
   <tr>
     <td width="50%" valign="top">
       <h4>
-        <a href="https://github.com/Suvesh108/BlockVerify">
+        <a href="https://github.com/bytebldr/BlockVerify">
           <img src="https://img.shields.io/badge/BlockVerify-Smart_Contracts-14b8a6?style=for-the-badge&logo=github&logoColor=white&labelColor=18181b" alt="BlockVerify" />
         </a>
       </h4>
@@ -141,7 +141,7 @@ I build fast web apps, cloud services, and developer tools. I love creating smoo
     </td>
     <td width="50%" valign="top">
       <h4>
-        <a href="https://github.com/Suvesh108/EDM">
+        <a href="https://github.com/bytebldr/EDM">
           <img src="https://img.shields.io/badge/EDM-Rust_·_Fast-CE422B?style=for-the-badge&logo=github&logoColor=white&labelColor=18181b" alt="EDM" />
         </a>
       </h4>
@@ -188,10 +188,10 @@ I build fast web apps, cloud services, and developer tools. I love creating smoo
 
 <!-- RECENT_RELEASES_START -->
 ```console
-suvesh@desktop:~/github$ gh release list --limit 8 --repo Suvesh108
+suvesh@desktop:~/github$ gh release list --limit 8 --repo bytebldr
 
-01. 🚀  EDM v0.0.9              Edge Download Manager                 [latest]
-02. 🚀  EDM v0.0.8              Edge Download Manager                 [latest]
+01. 🚀  edge-download-manager v0.0.9EDM v0.0.9                            [latest]
+02. 🚀  edge-download-manager v0.0.8EDM v0.0.8                            [v0.0.8]
 03. 🚀  Universal-Shared v0.2.4 Core Shared Library                   [pkg:core]
 04. 🚀  NetPulse v1.2           Real-Time Network Speed & Latency     [edge:v1.2]
 05. 🚀  NetPulse v1.1           Real-Time Network Speed & Latency     [edge:v1.2]

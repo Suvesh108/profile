@@ -8,7 +8,7 @@ const fs = require('fs');
 const https = require('https');
 const path = require('path');
 
-const USERNAME = process.argv[2] || process.env.GITHUB_ACTOR || 'Suvesh108';
+const USERNAME = process.argv[2] || process.env.GITHUB_ACTOR || 'bytebldr';
 const TOKEN = process.env.GITHUB_TOKEN || '';
 
 const KNOWN_SUMMARIES = {
@@ -36,16 +36,16 @@ const KNOWN_TAGS = {
 };
 
 const FALLBACK_RELEASES = [
-  { repo: 'EDM', tag: 'v0.0.5', name: 'EDM v0.0.5', published_at: '2026-10-29T11:43:37Z', url: 'https://github.com/Suvesh108/EDM/releases/tag/v0.0.5' },
-  { repo: 'EDM', tag: 'v0.0.4', name: 'EDM v0.0.4', published_at: '2026-10-29T10:10:35Z', url: 'https://github.com/Suvesh108/EDM/releases/tag/v0.0.4' },
-  { repo: 'Universal-Shared', tag: 'v0.2.4', name: 'Universal Shared v0.2.4', published_at: '2026-10-21T19:14:59Z', url: 'https://github.com/Suvesh108/Universal-Shared/releases/tag/v0.2.4' },
-  { repo: 'NetPulse', tag: 'v1.2', name: 'NetPulse v1.2', published_at: '2026-10-19T11:10:06Z', url: 'https://github.com/Suvesh108/NetPulse/releases/tag/v1.2' },
-  { repo: 'NetPulse', tag: 'v1.1', name: 'NetPulse v1.1', published_at: '2026-10-19T10:40:59Z', url: 'https://github.com/Suvesh108/NetPulse/releases/tag/v1.1' },
-  { repo: 'Settlr', tag: 'v0.0.9', name: 'Settlr Android Release v0.0.9', published_at: '2026-10-18T15:16:57Z', url: 'https://github.com/Suvesh108/Settlr/releases/tag/v0.0.9' },
-  { repo: 'UnitWise', tag: 'v0.0.8', name: 'UnitWise v0.0.8 — Dual-Mode Wi-Fi & Bluetooth LE Live Signal Auto-Discovery', published_at: '2026-10-18T10:08:28Z', url: 'https://github.com/Suvesh108/UnitWise/releases/tag/v0.0.8' },
-  { repo: 'UnitWise', tag: 'v0.0.7', name: 'UnitWise v0.0.7 — Sense-Grade Vampire Load Disaggregation', published_at: '2026-10-18T09:45:50Z', url: 'https://github.com/Suvesh108/UnitWise/releases/tag/v0.0.7' },
-  { repo: 'solar', tag: 'v0.1.6', name: 'v0.1.6 - Sunward Solar App Update', published_at: '2026-10-14T09:29:10Z', url: 'https://github.com/Suvesh108/solar/releases/tag/v0.1.6' },
-  { repo: 'jobscrap', tag: 'v0.4', name: 'v0.4 — 9-Platform Parallel Synchronization', published_at: '2026-09-03T07:16:16Z', url: 'https://github.com/Suvesh108/jobscrap/releases/tag/v0.4' }
+  { repo: 'EDM', tag: 'v0.0.5', name: 'EDM v0.0.5', published_at: '2026-10-29T11:43:37Z', url: 'https://github.com/bytebldr/EDM/releases/tag/v0.0.5' },
+  { repo: 'EDM', tag: 'v0.0.4', name: 'EDM v0.0.4', published_at: '2026-10-29T10:10:35Z', url: 'https://github.com/bytebldr/EDM/releases/tag/v0.0.4' },
+  { repo: 'Universal-Shared', tag: 'v0.2.4', name: 'Universal Shared v0.2.4', published_at: '2026-10-21T19:14:59Z', url: 'https://github.com/bytebldr/Universal-Shared/releases/tag/v0.2.4' },
+  { repo: 'NetPulse', tag: 'v1.2', name: 'NetPulse v1.2', published_at: '2026-10-19T11:10:06Z', url: 'https://github.com/bytebldr/NetPulse/releases/tag/v1.2' },
+  { repo: 'NetPulse', tag: 'v1.1', name: 'NetPulse v1.1', published_at: '2026-10-19T10:40:59Z', url: 'https://github.com/bytebldr/NetPulse/releases/tag/v1.1' },
+  { repo: 'Settlr', tag: 'v0.0.9', name: 'Settlr Android Release v0.0.9', published_at: '2026-10-18T15:16:57Z', url: 'https://github.com/bytebldr/Settlr/releases/tag/v0.0.9' },
+  { repo: 'UnitWise', tag: 'v0.0.8', name: 'UnitWise v0.0.8 — Dual-Mode Wi-Fi & Bluetooth LE Live Signal Auto-Discovery', published_at: '2026-10-18T10:08:28Z', url: 'https://github.com/bytebldr/UnitWise/releases/tag/v0.0.8' },
+  { repo: 'UnitWise', tag: 'v0.0.7', name: 'UnitWise v0.0.7 — Sense-Grade Vampire Load Disaggregation', published_at: '2026-10-18T09:45:50Z', url: 'https://github.com/bytebldr/UnitWise/releases/tag/v0.0.7' },
+  { repo: 'solar', tag: 'v0.1.6', name: 'v0.1.6 - Sunward Solar App Update', published_at: '2026-10-14T09:29:10Z', url: 'https://github.com/bytebldr/solar/releases/tag/v0.1.6' },
+  { repo: 'jobscrap', tag: 'v0.4', name: 'v0.4 — 9-Platform Parallel Synchronization', published_at: '2026-09-03T07:16:16Z', url: 'https://github.com/bytebldr/jobscrap/releases/tag/v0.4' }
 ];
 
 function githubApi(endpoint) {

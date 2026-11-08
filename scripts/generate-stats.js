@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 
-const username = process.argv[2] || 'Suvesh108';
+const username = process.argv[2] || 'bytebldr';
 const isMock = process.argv[3] === 'mock';
 
 const token = process.env.GITHUB_TOKEN;
@@ -45,7 +45,7 @@ async function main() {
     if (isMock || !token) {
       console.log("Generating stats with mock data...");
       data = {
-        name: "Suvesh Kumar",
+        name: "Suvesh",
         login: username,
         followers: { totalCount: 15 },
         repositories: {
